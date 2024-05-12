@@ -22,7 +22,12 @@ implementation 'com.github.barteksc:android-pdf-viewer:3.2.0-beta.1'
  maven {url('https://jcenter.bintray.com')}
 ```
 
-## Step 4: Open res -> layout ->activity_main.xml (or) main.xml and add following code:
+## Step 4: Navigate to Build scripts > gradle.proparties(Project Proparties) file and add the following dependency to it and Syne Now
+```js
+ android.enableJetifier=true
+```
+
+## Step 5: Open res -> layout ->activity_main.xml (or) main.xml and add following code:
 
 In this step we open an XML file and add the code :-
 ```xml
@@ -31,7 +36,7 @@ In this step we open an XML file and add the code :-
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 ```
-## Step 5: Open Java -> package – > MainActivity.Java and add following code:
+## Step 6: Open Java -> package – > MainActivity.Java and add following code:
 
 In this step we open an Java file and add the code :-
 ```java
